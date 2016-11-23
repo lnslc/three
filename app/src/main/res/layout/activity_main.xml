@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.songlicai.three.MainActivity">
+
+    <TextView
+        android:id="@+id/helloworld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/linerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/helloworld"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="LinerLayout"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#CCCCCC"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true">
+
+
+        <include layout="@layout/bottom_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bottom"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
