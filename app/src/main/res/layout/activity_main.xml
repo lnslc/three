@@ -18,7 +18,7 @@
 
     <Button
         android:id="@+id/linerLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/helloworld"
@@ -26,6 +26,31 @@
         android:layout_alignParentStart="true"
         android:text="LinerLayout"/>
 
+    <Button
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linerLayout"
+        android:layout_alignRight="@+id/linerLayout"
+        android:text="FrameLayout"
+        />
+    <Button
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignLeft="@+id/linerLayout"
+        android:text="TableLayout"/>
+    <Button
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="GridLayout"/>
+
+    <!--页脚-->
     <LinearLayout
         android:orientation="vertical"
         android:background="#CCCCCC"
@@ -38,8 +63,7 @@
         <include layout="@layout/bottom_layout"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/bottom"
-            />
+            android:id="@+id/bottom"/>
 
     </LinearLayout>
 </RelativeLayout>
