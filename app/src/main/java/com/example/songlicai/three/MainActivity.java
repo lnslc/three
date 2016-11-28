@@ -22,5 +22,37 @@ public class MainActivity extends Activity {
                 MainActivity.this.startActivity(intent);
             }
         });
+
+        Button btnFrameLayout = (Button) findViewById(R.id.frameLayout);
+
+        btnFrameLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, FrameLayoutActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+        Button btnTableLayout = (Button)findViewById(R.id.tableLayout);
+        btnTableLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, TableLayoutActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+        Button btnGridLayout = (Button)findViewById(R.id.gridLayout);
+        btnGridLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, GridLayoutActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
     }
 }
