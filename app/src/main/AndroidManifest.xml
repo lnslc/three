@@ -18,7 +18,8 @@
         <activity android:name=".LinearLayoutActivity" />
         <activity android:name=".FrameLayoutActivity" />
         <activity android:name=".TableLayoutActivity" />
-        <activity android:name=".GridLayoutActivity"></activity>
+        <activity android:name=".GridLayoutActivity" />
+        <activity android:name=".ViewActivity"></activity>
     </application>
 
 </manifest>

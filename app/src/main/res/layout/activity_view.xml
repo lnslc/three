@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.songlicai.three.ViewActivity">
+
+    <RadioGroup
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/radiobutton"
+            android:text="男"/>
+        <RadioButton
+            android:id="@+id/woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他"/>
+        <RadioButton
+            android:id="@+id/more"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还有吗?"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/good"
+        android:layout_below="@+id/sex"
+        android:layout_alignLeft="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="好"/>
+    <CheckBox
+        android:id="@+id/bad"
+        android:layout_toRightOf="@+id/good"
+        android:layout_alignTop="@+id/good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="坏"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_below="@+id/good"
+        android:layout_alignLeft="@+id/good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_man_1"/>
+    <ImageButton
+        android:id="@+id/pre"
+        android:src="@drawable/popup_btn"
+        android:layout_below="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/next"
+        android:src="@drawable/popup_btn"
+        android:layout_below="@+id/image"
+        android:layout_toRightOf="@+id/pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_below="@+id/pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></DatePicker>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_below="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TimePicker>
+
+</RelativeLayout>

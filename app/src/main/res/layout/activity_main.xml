@@ -47,8 +47,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tableLayout"
         android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal"
         android:text="GridLayout"/>
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridLayout"
+        android:layout_alignLeft="@+id/linerLayout"
+        android:text="View"/>
 
     <!--页脚-->
     <LinearLayout
