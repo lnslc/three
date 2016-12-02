@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.view.WindowManager;
 
 public class MainActivity extends Activity {
 
@@ -12,6 +13,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
         Button btnLinerLayout = (Button) findViewById(R.id.linerLayout);
 
         btnLinerLayout.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +65,28 @@ public class MainActivity extends Activity {
                 intent.setClass(MainActivity.this, ViewActivity.class);
                 MainActivity.this.startActivity(intent);
 
+            }
+        });
+
+        Button btnScrollView = (Button) findViewById(R.id.scrollView);
+        btnScrollView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, ScrollViewActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+        Button btnDialog = (Button) findViewById(R.id.dialog);
+        btnDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, DialogActivity.class);
+                MainActivity.this.startActivity(intent);
             }
         });
 

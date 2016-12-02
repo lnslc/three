@@ -19,7 +19,9 @@
         <activity android:name=".FrameLayoutActivity" />
         <activity android:name=".TableLayoutActivity" />
         <activity android:name=".GridLayoutActivity" />
-        <activity android:name=".ViewActivity"></activity>
+        <activity android:name=".ViewActivity" />
+        <activity android:name=".ScrollViewActivity" />
+        <activity android:name=".DialogActivity" />
     </application>
 
 </manifest>
