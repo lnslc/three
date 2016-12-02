@@ -20,7 +20,7 @@ onCreate()-->onRestore()-->onStart()-->onResume()-->onSave()-->onPause()-->onSto
      |            |            |           |     <-------------    |          |          |
      |            |            |           |         活动状态       |          |          |
      |            |            |   <---------------onRestart()------------    |          |
-     |            |            |                   可见生存期                   |          |
+     |            |            |                   可见生存期                  |          |
      |            |            |                                              |          |
 
 1. OnLowMemory
