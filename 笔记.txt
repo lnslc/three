@@ -279,6 +279,3 @@ iv.setDrawingCacheEnabled(false);
 																													
 																													
 																													
-
-    
-  
