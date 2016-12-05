@@ -1,3 +1,4 @@
+/**
 px-屏幕像素
 in-物理英寸
 pt-物理点
@@ -279,3 +280,4 @@ iv.setDrawingCacheEnabled(false);
 																													
 
 
+*/
