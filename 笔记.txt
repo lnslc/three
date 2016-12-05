@@ -277,4 +277,5 @@ MainActivity.this.setWallpaper(bmp);
 iv.setDrawingCacheEnabled(false); 
 															
 																													
-																													
+
+
